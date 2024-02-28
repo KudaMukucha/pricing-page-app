@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(
+    to bottom,#d4edea,#fff
+  );
+  min-height: 100vh;
+}
+main{
+  padding: 3rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    .active-btn{
+      background-color: rgb(24, 207, 146);
+      color: white;
+    }
+    .monthly-btn{
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    .annually-btn{
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+  button{
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+.package{
+  background-color: white;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  .features p{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    svg{
+      width: 18px;
+      height: 18px;
+      color: rgb(24, 207, 146);
+    }
+  }
+  .price{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(23, 23, 23);
+  }
+  .package-button{
+    background-color: white;
+    border: 1px solid rgb(24, 207, 146) ;
+  }
+}
+.recommended{
+  border: 1px solid rgb(24, 207, 146);
+}
+.recommended button{
+  background-color: rgb(24, 207, 146);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.highlighted{
+  background-color: orange;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.5rem;
+}
+.pricing-packages{
+  display: flex;
+  padding: 4rem 0;
+}
